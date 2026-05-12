@@ -99,7 +99,17 @@ export function PlatformDetail() {
           </div>
           <ol className="list-plain">
             {item.steps.map((s, i) => (
-              <li key={i}>{s}</li>
+              <li key={i}>
+                <span>{s.text}</span>
+                {s.image && (
+                  <img
+                    src={s.image}
+                    alt={s.alt ?? s.text}
+                    loading="lazy"
+                    className="step-screenshot"
+                  />
+                )}
+              </li>
             ))}
           </ol>
           {item.tip ? (

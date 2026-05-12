@@ -1,7 +1,13 @@
+export type Step = {
+  text: string
+  image?: string
+  alt?: string
+}
+
 export type ChecklistItem = {
   id: string
   title: string
-  steps: string[]
+  steps: Step[]
   tip?: string
 }
 
