@@ -24,7 +24,11 @@ function PlatformCard({ p }: { p: (typeof platforms)[number] }) {
   return (
     <Link to={`/platforms/${p.id}`} className="card-link platform-card">
       <div className="platform-card__header">
-        <span className="platform-icon" aria-hidden>{p.icon}</span>
+        {p.iconImage ? (
+          <img src={p.iconImage} alt="" aria-hidden className="platform-icon platform-icon--img" />
+        ) : (
+          <span className="platform-icon" aria-hidden>{p.icon}</span>
+        )}
       </div>
       <h2>{p.name}</h2>
       <p>{p.short}</p>

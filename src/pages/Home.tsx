@@ -2,7 +2,17 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { platforms } from '../data/platforms'
 
-const cards = [
+type HomeCard = {
+  to: string
+  badge: string
+  badgeClass: string
+  icon: string
+  iconImage?: string
+  title: string
+  desc: string
+}
+
+const cards: HomeCard[] = [
   {
     to: '/diagnosis',
     badge: '~3 минуты',
@@ -16,6 +26,7 @@ const cards = [
     badge: 'Must have',
     badgeClass: '',
     icon: '📋',
+    iconImage: '/icons/platforms.svg',
     title: 'Платформы',
     desc: 'Telegram, VK, MAX: пароль, 2FA, сессии, восстановление.',
   },
@@ -90,7 +101,11 @@ export function Home() {
         {cards.map((c) => (
           <Link key={c.to} to={c.to} className="card-link home-card">
             <div className="home-card__top">
-              <span className="home-card__icon" aria-hidden>{c.icon}</span>
+              {c.iconImage ? (
+                <img src={c.iconImage} alt="" aria-hidden className="home-card__icon home-card__icon--img" />
+              ) : (
+                <span className="home-card__icon" aria-hidden>{c.icon}</span>
+              )}
               <span className={`badge ${c.badgeClass}`}>{c.badge}</span>
             </div>
             <h2>{c.title}</h2>

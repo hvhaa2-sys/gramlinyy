@@ -489,6 +489,13 @@ a {
   line-height: 1;
 }
 
+.home-card__icon--img {
+  width: 1.8rem;
+  height: 1.8rem;
+  display: block;
+  object-fit: contain;
+}
+
 .home-card h2 {
   margin-top: 0;
 }
@@ -602,6 +609,20 @@ a {
 .platform-icon {
   font-size: 1.75rem;
   line-height: 1;
+}
+
+.platform-icon--img {
+  width: 1.75rem;
+  height: 1.75rem;
+  display: block;
+  object-fit: contain;
+}
+
+.platform-detail-icon--img {
+  width: 3rem;
+  height: 3rem;
+  display: block;
+  object-fit: contain;
 }
 
 /* ── Recovery scenario card ── */

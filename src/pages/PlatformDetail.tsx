@@ -33,7 +33,11 @@ export function PlatformDetail() {
 
       {/* Platform header */}
       <div className="platform-detail-header">
-        <span className="platform-detail-icon" aria-hidden>{platform.icon}</span>
+        {platform.iconImage ? (
+          <img src={platform.iconImage} alt="" aria-hidden className="platform-detail-icon platform-detail-icon--img" />
+        ) : (
+          <span className="platform-detail-icon" aria-hidden>{platform.icon}</span>
+        )}
         <div>
           <h1 style={{ marginBottom: '0.25rem' }}>{platform.name}</h1>
           <p style={{ margin: 0, color: 'var(--text-muted)', fontSize: '0.95rem' }}>

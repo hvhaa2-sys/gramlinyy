@@ -16,6 +16,7 @@ export type Platform = {
   name: string
   short: string
   icon: string
+  iconImage?: string
   priority: boolean
   lastReviewed: string
   officialUrl?: string
