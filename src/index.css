@@ -615,13 +615,13 @@ a.btn--ghost:hover {
 
 /* ── Platform icon ── */
 .platform-icon {
-  font-size: 1.75rem;
+  font-size: 2.5rem;
   line-height: 1;
 }
 
 .platform-icon--img {
-  width: 1.75rem;
-  height: 1.75rem;
+  width: 2.75rem;
+  height: 2.75rem;
   display: block;
   object-fit: contain;
 }
