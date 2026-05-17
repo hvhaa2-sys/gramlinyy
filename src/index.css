@@ -257,21 +257,25 @@ a {
   transform: scale(0.98);
 }
 
-.btn--primary {
+.btn--primary,
+a.btn--primary {
   background: var(--accent);
   color: var(--btn-primary-text);
 }
 
-.btn--primary:hover {
+.btn--primary:hover,
+a.btn--primary:hover {
   opacity: 0.92;
 }
 
-.btn--ghost {
+.btn--ghost,
+a.btn--ghost {
   background: var(--surface-2);
   color: var(--text-heading);
 }
 
-.btn--ghost:hover {
+.btn--ghost:hover,
+a.btn--ghost:hover {
   opacity: 0.9;
 }
 
