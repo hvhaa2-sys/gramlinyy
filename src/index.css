@@ -9,6 +9,7 @@
   --accent: #0d9488;
   --accent-dim: #0f766e;
   --accent-soft: rgba(13, 148, 136, 0.12);
+  --btn-primary-text: #ffffff;
   --warn: #d97706;
   --warn-soft: rgba(217, 119, 6, 0.12);
   --danger: #dc2626;
@@ -38,6 +39,7 @@
     --accent: #2dd4bf;
     --accent-dim: #14b8a6;
     --accent-soft: rgba(45, 212, 191, 0.14);
+    --btn-primary-text: #0a1115;
     --warn: #fbbf24;
     --warn-soft: rgba(251, 191, 36, 0.12);
     --danger: #f87171;
@@ -58,6 +60,7 @@
   --accent: #2dd4bf;
   --accent-dim: #14b8a6;
   --accent-soft: rgba(45, 212, 191, 0.14);
+  --btn-primary-text: #0a1115;
   --warn: #fbbf24;
   --warn-soft: rgba(251, 191, 36, 0.12);
   --danger: #f87171;
@@ -77,6 +80,7 @@
   --accent: #0d9488;
   --accent-dim: #0f766e;
   --accent-soft: rgba(13, 148, 136, 0.12);
+  --btn-primary-text: #ffffff;
   --warn: #d97706;
   --warn-soft: rgba(217, 119, 6, 0.12);
   --danger: #dc2626;
@@ -255,7 +259,7 @@ a {
 
 .btn--primary {
   background: var(--accent);
-  color: #fff;
+  color: var(--btn-primary-text);
 }
 
 .btn--primary:hover {
