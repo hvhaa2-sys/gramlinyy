@@ -260,7 +260,7 @@ a {
 .btn--primary,
 a.btn--primary {
   background: var(--accent);
-  color: var(--btn-primary-text);
+  color: var(--btn-primary-text) !important;
 }
 
 .btn--primary:hover,
